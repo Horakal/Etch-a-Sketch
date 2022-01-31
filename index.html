@@ -18,7 +18,10 @@
 			<h3>Settings</h3>
 			<div>
 				<p id="textInput"></p>
-				<input type="range" value="16" min="16" max="100" onchange="updateRange(this.value), clearGrid(this.value)">
+				<input type="range" value="16" min="16" max="50" onchange="updateRange(this.value), clearGrid(this.value)">
+				<input type="color" id="colorPicker">
+				<input type="button" value="Random" id="random">
+				<button id="clearGrid" onclick="clearGrid(16)">Clear</button>
 			</div>
 
 		</div>

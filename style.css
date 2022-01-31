@@ -7,9 +7,11 @@ body{
 }
 
 #container{
-	width: 800px;
+	width: 600px;
 	display: grid;
-	height: 800px;
+	height: 600px;
+	padding-left: 50px;
+	padding-bottom: 100px;
 }
 
 .row{
@@ -19,7 +21,7 @@ body{
 .pos{
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .bgBlack{
@@ -30,3 +32,40 @@ header h1{
 	text-align: center;
 	margin: 90px;
 }
+
+.settings{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.settings  div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+}
+
+#colorPicker{
+	width: 80px;
+	height: 70px;
+	border: none;
+}
+
+#random, #clearGrid{
+	width: 80px;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px;
+	font-weight: bold;
+	background-color: white;
+	transition-duration: 0.2s;
+}
+
+#random:hover,#clearGrid:hover{
+	background-color: rgb(195, 195, 197);
+}
+
